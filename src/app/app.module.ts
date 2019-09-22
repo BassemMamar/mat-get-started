@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
-import { ShopComponent } from './shop/shop.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { ImprintComponent } from './imprint/imprint.component';
 
@@ -15,7 +14,6 @@ import { ImprintComponent } from './imprint/imprint.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    ShopComponent,
     ImprintComponent,
   ],
   imports: [

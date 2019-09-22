@@ -1,0 +1,19 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="32px" fxLayoutAlign="flex-start space-around ">
+        <ng-container *ngFor="let shopItem of shopItems">
+             
+                <mat-card [routerLink]="['../shop', shopItem.id]" class="example-card" fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)"
+                    fxFlex.lt-sm="100%" style="padding: 5px; margin:15px ">
+                    <mat-card-content style="padding: 15px">
+                        <img mat-card-image [src]="shopItem.src" [alt]="shopItem.title">
+                    </mat-card-content>
+                    <mat-card-title class="mat-card-title ng-star-inserted">
+                        {{  shopItem.title }} </mat-card-title>
+                    <mat-card-subtitle class="mat-card-subtitle">
+                        {{ shopItem.price }}
+                    </mat-card-subtitle>
+                </mat-card>
+             
+        </ng-container>
+    </div>
+</div>

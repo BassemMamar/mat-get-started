@@ -1,0 +1,38 @@
+<mat-grid-list *ngIf="shopItem" cols="3">
+    <mat-grid-tile [colspan]="2">
+        <img mat-card-image [src]="shopItem.src" [alt]="shopItem.title">
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1">
+
+        <div class="card-details">
+            <!---->
+            <mat-card-title class="mat-card-title ng-star-inserted"> {{ shopItem.title }}
+            </mat-card-title>
+            <!---->
+            <mat-button-toggle-group
+                class="ratings mat-button-toggle-group mat-button-toggle-group-appearance-standard ng-star-inserted"
+                role="group" aria-disabled="false">
+                <!---->
+
+                <star-rating value="3" checkedcolor="yello" uncheckedcolor="yello" size="24px" readonly="true">
+                </star-rating>
+            </mat-button-toggle-group>
+            <mat-card-subtitle class="mat-card-subtitle"> {{ shopItem.price }} </mat-card-subtitle>
+            <!---->
+            <mat-card-content class="mat-card-content ng-star-inserted">
+                <!---->
+                <p class="ng-star-inserted"> {{ shopItem.description }}</p>
+            </mat-card-content>
+            <!----><button class="cart-button mat-raised-button mat-accent ng-star-inserted" color="accent"
+                mat-raised-button="" type="button"><span class="mat-button-wrapper">
+                    <mat-icon aria-label="Shopping cart" class="mat-icon material-icons mat-icon-no-color" role="img"
+                        aria-hidden="true">
+                        add_shopping_cart</mat-icon> In den Einkaufswagen
+                </span>
+                <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                <div class="mat-button-focus-overlay"></div>
+            </button>
+        </div>
+    </mat-grid-tile>
+
+</mat-grid-list>
