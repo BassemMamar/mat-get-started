@@ -1,14 +1,17 @@
-.container.section-video {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-}
-
-.iframe-video {
-    max-height: none;
-    max-width: 100%;
-}
+.iframe-container {
+    overflow: hidden;
+    // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+      padding-top: 65%;
+    position: relative;
+  }
+   
+  .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     width: 100%;
+  }

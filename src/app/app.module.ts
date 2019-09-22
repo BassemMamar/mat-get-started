@@ -8,19 +8,23 @@ import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { ShopComponent } from './shop/shop.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ShopComponent,
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    SharedModule
+    SharedModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

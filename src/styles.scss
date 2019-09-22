@@ -6,4 +6,12 @@ body {
     font-family: Roboto,
      "Helvetica Neue", sans-serif;
      background-color: #fafafa;
+    //  direction: rtl;
+     }
+
+     .content {
+        align-items: center;
+        
+        flex-direction: column;
+        padding: 16px 50px;
      }
